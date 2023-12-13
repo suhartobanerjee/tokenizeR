@@ -11,9 +11,8 @@
 #' @useDynLib tokenizeRs, .registration = TRUE
 NULL
 
-#' add two integers supplied to rust
 #' @export
-add_nums <- function(x, y) .Call(wrap__add_nums, x, y)
+decode <- function(tensor) .Call(wrap__decode, tensor)
 
 
 # nolint end
