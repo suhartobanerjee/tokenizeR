@@ -125,7 +125,7 @@ fn decode_tokens(tensor: Integers) -> Strings {
 
 
     let tensor_vec: Vec<i32> = tensor
-        .iter()
+        .par_iter()
         .map(|t| i32::from_robj(&Robj::from(t))
              .expect("Cannot convert R int vector to Vec<i32>")
         )
