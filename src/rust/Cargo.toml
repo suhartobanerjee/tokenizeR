@@ -10,3 +10,4 @@ crate-type = [ 'staticlib' ]
 extendr-api = "0.6"
 polars = { version = "0.35.4", features = ["lazy"]}
 rayon = "1.8.0"
+serde_json = "1.0.108"

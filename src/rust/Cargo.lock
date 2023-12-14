@@ -1216,6 +1216,7 @@ dependencies = [
  "extendr-api",
  "polars",
  "rayon",
+ "serde_json",
 ]
 
 [[package]]

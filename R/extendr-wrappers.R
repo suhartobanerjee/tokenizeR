@@ -12,7 +12,10 @@
 NULL
 
 #' @export
-decode <- function(tensor) .Call(wrap__decode, tensor)
+decode_tokens <- function(tensor) .Call(wrap__decode_tokens, tensor)
+
+#' @export
+decode_batch <- function(batch) .Call(wrap__decode_batch, batch)
 
 
 # nolint end
